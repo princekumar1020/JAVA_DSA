@@ -1,4 +1,4 @@
-package Arrays.Easy.TwoSumArray;
+package Arrays.Medium.TwoSumArray;
 import java.util.Arrays;
 
 public class Optimal {
@@ -11,7 +11,7 @@ public class Optimal {
         int i=0;
         int j= arr.length-1;
         boolean found=false;
-        while(i <= j){
+        while(i < j){
             if(arr[i] + arr[j] == t){
                 System.out.println("yes");
                 found=true;

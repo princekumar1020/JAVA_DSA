@@ -1,9 +1,10 @@
-package Arrays.Easy.TwoSumArray;
+package Arrays.Medium.TwoSumArray;
 
 import java.util.HashMap;
 
 public class better {
     public static void main(String[] args) {
+        // koi bhi do no array ma sa not subarray koi bhi
         int[] arr={2,6,5,8,11};
         int t=14;
         HashMap<Integer,Integer> map=new HashMap<>();
@@ -13,9 +14,7 @@ public class better {
                 System.out.println(map.get(exist)+" "+i);
                 break;
             }
-            else{
                 map.put(arr[i],i);
-            }
         }
     }
 }

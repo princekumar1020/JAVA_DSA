@@ -1,4 +1,4 @@
-package Arrays.Easy.TwoSumArray;
+package Arrays.Medium.TwoSumArray;
 
 public class BruteForce {
     public static void main(String[] args) {

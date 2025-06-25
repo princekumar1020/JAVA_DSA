@@ -1,4 +1,4 @@
-package Arrays.Easy.LongestSubArrayWithSumK.OnlyPositive;
+package Arrays.Easy.LongestSubArrayWithSumKPositiveAndNegative;
 
 import java.util.HashMap;
 // reverse mathamatics
@@ -19,6 +19,8 @@ public class Solution3 {
             if(!map.containsKey(sum)){
                 map.put(sum,i);
             }
+            // if dont put here this if condition then it will not
+            // work when array contain zeros mean not give right ans
         }
         System.out.println(maxlen);
 

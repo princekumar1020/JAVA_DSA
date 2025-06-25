@@ -1,4 +1,4 @@
-package Arrays.Easy.LongestSubArrayWithSumK.OnlyPositive;
+package Arrays.Easy.LongestSubArrayWithSumKPositiveAndNegative;
 
 import java.util.HashMap;
 

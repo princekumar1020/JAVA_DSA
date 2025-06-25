@@ -1,4 +1,4 @@
-package Arrays.Easy.LongestSubArrayWithSumK.OnlyPositive;
+package Arrays.Easy.LongestSubArrayWithSumKPositiveAndNegative;
 
 public class Solution2 {
     public static void main(String[] args) {

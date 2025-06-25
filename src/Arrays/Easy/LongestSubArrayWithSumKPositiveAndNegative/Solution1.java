@@ -1,4 +1,4 @@
-package Arrays.Easy.LongestSubArrayWithSumK.OnlyPositive;
+package Arrays.Easy.LongestSubArrayWithSumKPositiveAndNegative;
 // subarry means contiguous part of array
 
 public class Solution1 {
@@ -10,13 +10,11 @@ public class Solution1 {
         for(int i=0;i< arr.length;i++){
             for(int j=i;j< arr.length;j++){
                 int sum=0;
-                int count=0;
                 for(int z=i;z<=j;z++){
                     sum+=arr[z];
-                    count++;
                 }
                 if(sum == k){
-                    max=Math.max(max,count);
+                    max=Math.max(max,j-i+1);
                 }
             }
         }

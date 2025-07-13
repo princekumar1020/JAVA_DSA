@@ -11,13 +11,11 @@ public class MaximumConsicutiveOnes {
         for(int i=0;i< arr.length;i++){
             if(arr[i] == 1){
                 count++;
-                if(count > lcount){
-                    lcount=count;
-                }
             }
             else {
                 count=0;
             }
+            lcount = Math.max(lcount, count);
         }
         System.out.println(lcount);
 

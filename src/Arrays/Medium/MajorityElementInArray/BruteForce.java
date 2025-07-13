@@ -1,15 +1,17 @@
 package Arrays.Medium.MajorityElementInArray;
 
+import java.util.HashMap;
+
 public class BruteForce {
     public static void main(String[] args) {
         int[] arr={2,2,3,3,1,2,2};
-        for(int i=0;i< arr.length;i++){
-            int count=0;
-            for(int j=0;j< arr.length;j++){
-                if(arr[i] == arr[j]) count++;
-            }
-            if(count > (arr.length/2)){
-                System.out.println(arr[i]);
+        HashMap<Integer,Integer> map=new HashMap<>();
+        for(int a:arr){
+            map.put(a,map.getOrDefault(a,0)+1);
+        }
+        for(HashMap.Entry<Integer,Integer> e:map.entrySet()){
+            if(e.getValue() > (arr.length/2)){
+                System.out.println(e.getKey());
                 break;
             }
         }
